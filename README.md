@@ -4,6 +4,9 @@
 
 ---
 
+![Screenshot of Bifröst](https://raw.githubusercontent.com/simonjenny/bifrost/master/.github/screenshot.PNG "Screenshot")
+
+
 ## Purpose
 
 Bifröst is a tiny (125kb, without Backgound Image) Homepage/Startpage Dashboard forked from [jeroenpardon/sui](https://github.com/jeroenpardon/sui) with some small modifications. I kept the original JSON configuration approach but added some Gulp Tasks, changed the javascript, added a notsosecret access control and the possibility to add more sections. 
