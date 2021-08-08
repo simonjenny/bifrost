@@ -71,6 +71,19 @@
           "url": "https://youtube.com/feed/subscriptions"
         }
       ]
+    },
+    {
+      "category": "Fun",
+      "links": [
+        {
+          "name": "Lolcats",
+          "url": "https://icanhas.cheezburger.com/lolcats"
+        },
+        {
+          "name": "Hamsterdance",
+          "url": "http://hamster.dance/hamsterdance/"
+        }
+      ]
     }
   ]
 }
