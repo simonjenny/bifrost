@@ -1,0 +1,16 @@
+<h3>Applications</h3>
+<div id="apps_loop">
+    {{#apps}}
+        <a class="nounderline" href="{{url}}" target="_blank">
+            <div class="apps_item">
+                <div class="apps_icon">
+                    <span class="iconify icon" data-icon="mdi-{{icon}}"></span>
+                </div>
+                <div class="apps_text">
+                    {{name}}
+                    <span id="app-address">{{url}}</span>
+                </div>
+            </div>
+        </a>
+    {{/apps}}                         
+</div>

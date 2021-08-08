@@ -1,0 +1,76 @@
+{
+  "bookmarks" : [
+    {
+      "category": "Social Media",
+      "links": [
+        {
+          "name": "Instagram",
+          "url": "https://instagram.com"
+        },
+        {
+          "name": "Facebook",
+          "url": "https://facebook.com"
+        }
+      ]
+    },
+    {
+      "category": "News",
+      "links": [
+        {
+          "name": "Reddit",
+          "url": "https://reddit.com/new"
+        },
+        {
+          "name": "Watson",
+          "url": "https://watson.ch"
+        },
+        {
+          "name": "Gizmodo",
+          "url": "https://gizmodo.com"
+        },
+        {
+          "name": "Heise",
+          "url": "https://heise.de/"
+        },
+        {
+          "name": "Golem",
+          "url": "https://golem.de/"
+        }
+      ]
+    },
+    {
+      "category": "Dev",
+      "links": [
+        {
+          "name": "Github",
+          "url": "https://github.com/"
+        },
+        {
+          "name": "Github Trending",
+          "url": "https://github.com/trending"
+        },
+        {
+          "name": "Devdocs",
+          "url": "https://devdocs.io"
+        },
+        {
+          "name": "Devhints",
+          "url": "https://devhints.io"
+        }
+      ]
+    },
+    {
+      "category": "Media",
+      "links": [
+        {
+          "name": "Spotify",
+          "url": "http://open.spotify.com"
+        },
+        {
+          "name": "YouTube",
+          "url": "https://youtube.com/feed/subscriptions"
+        }
+      ]
+    }
+  ]
+}
