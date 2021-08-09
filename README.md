@@ -15,7 +15,7 @@ Combined with docker you can host this dashboard with less than 5MB of space.
 
 ## Installation
 
-Just download the latest Release and unzip the directory to your webserver and edit the json files in the public/data directory.
+Just download the latest Release and unzip the directory to your webserver and edit the settings.json file.
 
 ## Build from Souce
 
@@ -26,25 +26,25 @@ Just download the latest Release and unzip the directory to your webserver and e
 - Create Production Files
   ```bash 
   npm run gulp
-The production files are then located within the "dist" folder. Point your webroot there and edit the json files in the public/data directory.
+The production files are then located within the "dist" folder. Point your webroot there and edit the settings.json file.
 
 ## Usage/Expand
 
 ### Greetings
 
-You can edit the greetings within src/app.js
-```javascript
-  const strings = [
-    'Gute Nacht!',
-    'Guten Morgen!',
-    'Guten Nachmittag!',
-    'Guten Abend!'
-  ]
+You can edit the greetings within settings.js
+```json
+    "strings": [
+      "Gute Nacht!",
+      "Guten Morgen!",
+      "Guten Nachmittag!",
+      "Guten Abend!"
+    ]
 ```
 
 ### Sections
 
-You can add more sections by creating them in the index.html file. Be shure to name the section the same as your .json File within the public/data folder.
+You can add more sections by creating them in the index.html file. Be sure to name the section the same in the settings.json file.
 
 ### Background Image and Colors
 
@@ -70,7 +70,7 @@ You can define the colors within assets/css/styles.css by changing the root vari
 ## The "not so secret" Access Control
 
 This Dashboard uses a not very secret simple method for access control. 
-Basically you add the notsosecret String from data/notsosecret.json to your URL like in this example:
+Basically you add the notsosecret String from settings.json to your URL like in this example:
 
 https://myawesomedash.com/?SECRET
 
