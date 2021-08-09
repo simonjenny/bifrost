@@ -81,7 +81,7 @@ If you want to host this Dashboard with Docker, build the project first and then
 
 docker run --rm -it -e 'ENABLE_COMPRESSION'='1' -e 'ENABLE_CACHE'='1' -p '1702:80/tcp' -v 'dist/':'/var/www':'ro' 'momar/web:latest' 
 
-momar/webis (https://hub.docker.com/r/momar/web) a tiny (1.75mb) container for simply serving static files. Perfect for serving out tiny dashboard.
+momar/webis (https://hub.docker.com/r/momar/web) a tiny (1.75mb) container for simply serving static files. Perfect for serving our dashboard.
 
 ## Digitalocean App Platform
 
