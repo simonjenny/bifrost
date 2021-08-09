@@ -75,7 +75,7 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('clean', function () {
-    return del(['build', 'src/lib'])
+    return del(['src/lib'])
 });
 
 gulp.task('default',  gulp.series('download','templates','scripts', 'styles','images', 'public','clean','deploy'));
