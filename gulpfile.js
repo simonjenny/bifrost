@@ -8,7 +8,7 @@ const wrap       = require('gulp-wrap');
 const handlebars = require('gulp-handlebars');
 const merge      = require('merge2');
 const download   = require('gulp-download2');
-const clean      = require('gulp-clean');
+const del = require('del');
 
 function templates() {
     return gulp.src('./templates/*.hbs')
@@ -26,7 +26,7 @@ function templates() {
   }
 
 gulp.task('scripts', function() {
-    return gulp.src('./src/*.js')
+    return gulp.src('./src/**/*.js')
         .pipe(concat('j.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest( './build/assets/js' ));
@@ -52,7 +52,7 @@ gulp.task('public', function() {
 gulp.task('templates', function() {
     return merge(templates())
     .pipe(concat('templates.js'))
-    .pipe(gulp.dest('./src'));
+    .pipe(gulp.dest('./src/lib'));
 });
 
 gulp.task('download', function () {
@@ -66,7 +66,7 @@ gulp.task('download', function () {
             file: 'iconify.js',
         },
     ];
-    return download(files).pipe(gulp.dest('./src'));
+    return download(files).pipe(gulp.dest('./src/lib'));
 });
 
 gulp.task('deploy', function() {
@@ -75,8 +75,7 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('clean', function () {
-    return gulp.src('./dist/**/*', {read: false, allowEmpty: true})
-    .pipe(clean());
+    return del(['build', 'src/lib'])
 });
 
 gulp.task('default',  gulp.series('download','templates','scripts', 'styles','images', 'public','clean','deploy'));

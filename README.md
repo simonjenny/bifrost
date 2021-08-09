@@ -15,17 +15,18 @@ Combined with docker you can host this dashboard with less than 5MB of space.
 
 ## Installation
 
+Just download the latest Release and unzip the directory to your webserver and edit the json files in the public/data directory.
+
+## Build from Souce
+
 - Clone this repository
-- Rename and Edit public/data/apps.json.example to public/data/apps.json
-- Rename and Edit public/data/links.json.example to public/data/links.json
-- Update notsosecret in src/access.js
 - Install Gulp and Depenencies
   ```bash
   npm install
 - Create Production Files
   ```bash 
   npm run gulp
-The production files are then located within the "dist" folder. Point your webroot there.
+The production files are then located within the "dist" folder. Point your webroot there and edit the json files in the public/data directory.
 
 ## Usage/Expand
 
@@ -34,10 +35,10 @@ The production files are then located within the "dist" folder. Point your webro
 You can edit the greetings within src/app.js
 ```javascript
   const strings = [
-    'Gute Nacht, Simon!',
-    'Guten Morgen, Simon!',
-    'Guten Nachmittag, Simon!',
-    'Guten Abend, Simon!'
+    'Gute Nacht!',
+    'Guten Morgen!',
+    'Guten Nachmittag!',
+    'Guten Abend!'
   ]
 ```
 
@@ -69,11 +70,11 @@ You can define the colors within assets/css/styles.css by changing the root vari
 ## The "not so secret" Access Control
 
 This Dashboard uses a not very secret simple method for access control. 
-Basically you add the notsosecret String from src/access.js to your URL like in this example:
+Basically you add the notsosecret String from data/notsosecret.json to your URL like in this example:
 
 https://myawesomedash.com/?SECRET
 
-You will only need to do this once per Browser you intend to use the Dashboard, since the notsosecret key will be stored in your localStorage for further comparison. I may update this medthod in the future. 
+You will only need to do this once per Browser you intend to use the Dashboard, since the notsosecret key will be stored in your localStorage for further comparison. I may update this method in the future. 
 
 ## Docker
 If you want to host this Dashboard with Docker, build the project first and then expose "dist" to Docker:

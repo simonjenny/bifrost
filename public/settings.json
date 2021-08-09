@@ -1,0 +1,130 @@
+{
+	"notsosecret": "CHANGEME",
+	"strings": [
+		"Gute Nacht!",
+		"Guten Morgen!",
+		"Guten Nachmittag!",
+		"Guten Abend!"
+	],
+	"apps": [
+	{
+		"name": "Plex",
+		"url": "https://10.10.10.10",
+		"icon": "plex"
+	},
+	{
+		"name": "Ombi",
+		"url": "https://10.10.10.10",
+		"icon": "movie-search-outline"
+	},
+	{
+		"name": "Radarr",
+		"url": "https://10.10.10.10:7878",
+		"icon": "filmstrip"
+	},
+	{
+		"name": "Sonarr",
+		"url": "https://10.10.10.10:8989",
+		"icon": "television-box"
+	},
+	{
+		"name": "Tautulli",
+		"url": "https://10.10.10.10:8181/home",
+		"icon": "movie-roll"
+	},
+
+	{
+		"name": "Home Assistant",
+		"url": "https://10.10.10.10",
+		"icon": "home-assistant"
+	},
+	{
+		"name": "AdGuard",
+		"url": "https://10.10.10.10:3000",
+		"icon": "shield-home-outline"
+	},
+	{
+		"name": "Nginx Proxy Manager",
+		"url": "https://10.10.10.10:8181",
+		"icon": "server-network"
+	},
+
+	{
+		"name": "qBittorrent",
+		"url": "https://10.10.10.10:8080",
+		"icon": "cloud-download-outline"
+	},
+	{
+		"name": "ESPHome",
+		"url": "https://10.10.10.10:6052",
+		"icon": "chip"
+	}
+	],
+	
+	"bookmarks": [{
+		"category": "Social Media",
+		"links": [{
+				"name": "Instagram",
+				"url": "https://instagram.com"
+			},
+			{
+				"name": "Facebook",
+				"url": "https://facebook.com"
+			}]
+		},
+		{
+		"category": "News",
+		"links": [{
+				"name": "Reddit",
+				"url": "https://reddit.com/new"
+			},
+			{
+				"name": "Watson",
+				"url": "https://watson.ch"
+			},
+			{
+				"name": "Gizmodo",
+				"url": "https://gizmodo.com"
+			},
+			{
+				"name": "Heise",
+				"url": "https://heise.de/"
+			},
+			{
+				"name": "Golem",
+				"url": "https://golem.de/"
+			}]
+		},
+		{
+		"category": "Dev",
+		"links": [{
+				"name": "Github",
+				"url": "https://github.com/"
+			},
+			{
+				"name": "Github Trending",
+				"url": "https://github.com/trending"
+			},
+			{
+				"name": "Devdocs",
+				"url": "https://devdocs.io"
+			},
+			{
+				"name": "Devhints",
+				"url": "https://devhints.io"
+			}]
+		},
+		{
+		"category": "Media",
+		"links": [{
+				"name": "Spotify",
+				"url": "http://open.spotify.com"
+			},
+			{
+				"name": "YouTube",
+				"url": "https://youtube.com/feed/subscriptions"
+			}]
+		}
+	]
+}
+
