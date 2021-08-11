@@ -85,6 +85,27 @@ momar/webis (https://hub.docker.com/r/momar/web) a tiny (1.75mb) container for s
 
 ## Digitalocean App Platform
 
-To host Bifröst with the DO App Plattform simply clone this repository first make all modifications to the json files and the notsosecret access.js then push these back to your forked repository. 
+To host Bifröst for Free with the DO App Plattform simply clone this repository first make all modifications to the json files and the notsosecret access.js then push these back to your forked repository. 
 
 Instruct the DO App Platform to use dist/ as root folder and to run "npm run gulp" after the deployment.
+
+Here is the AppSpec example for my Dashboard:
+
+```Yaml
+domains:
+- domain: dash.simonjenny.dev
+  type: PRIMARY
+name: dash-simonjenny-dev
+region: fra
+static_sites:
+- build_command: npm run gulp
+  environment_slug: node-js
+  github:
+    branch: master
+    deploy_on_push: true
+    repo: simonjenny/dash.simonjenny.dev
+  name: dash-simonjenny-dev
+  output_dir: dist
+  routes:
+  - path: /
+  source_dir: /
